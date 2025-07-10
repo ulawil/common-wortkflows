@@ -1,6 +1,6 @@
 source:
-- all:
   - changed-files:
-    - any-glob-to-any-file: 'src/**/*'
-    - all-globs-to-all-files: '!src/main/resources/*'
+    - all-globs-to-any-file: 
+      - 'src/**/*'
+      - '!src/main/resources/*'
     

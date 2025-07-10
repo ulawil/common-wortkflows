@@ -1,8 +1,18 @@
-Source Code:
+Source:
 - all:
   - changed-files:
     - any-glob-to-any-file: 'src/**/*'
-    - all-globs-to-all-files: '!src/**/*.yaml'
+    - all-globs-to-all-files: '!src/main/resources/*'
+    - all-globs-to-all-files: '!src/test/resources/*'
+
+Configuration:
+- changed-files:
+  - any-glob-to-any-file:
+    - 'src/main/resources/*'
+    - 'src/test/resources/*'
+
+
+    
       
       # - 'e2e/**/*'
       # - 'public/**/*'

@@ -2,10 +2,9 @@ name: "Common PR Labeler"
 
 on:
   workflow_call:
-    inputs:
-      labeler-token:
+    secrets:
+      LABELER_TOKEN:
         required: true
-        type: string
 
 jobs:
   labeler:
@@ -29,4 +28,4 @@ jobs:
       - name: Run labeler
         uses: actions/labeler@v5
         with:
-          repo-token: "${{ inputs.labeler-token }}"
+          repo-token: "${{ secrets.LABELER_TOKEN }}"

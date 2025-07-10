@@ -17,31 +17,32 @@ Source Code:
     #   - '!src/**/*.yaml'
     #   - '!src/**/*.yml'
 
-Configuration:
-- changed-files:
-  - any-glob-to-any-file:
-    # - '.github/**/*'
-    # - '.husky/**/*'
-    # - 'k8s/overlays/**/*'
-    # - '.dockerignore'
-    # - '.editorconfig'
-    # - '.env.development'
-    # - '.env.production'
-    # - '.gitignore'
-    # - '.npmrc'
-    # - '.prettierignore'
-    # - '.prettierrc'
-    # - 'Dockerfile'
-    # - 'buildConfig.json'
-    # - '*.crt'
-    # - '*.config.ts'
-    # - 'tsconfig.*'
-    # - '*.conf'
-    # - '*.html'
-    - '**/*.yaml' # below works so this should too
-    - '**/*.yml' # works
-  # - all-globs-to-all-files: 
-  #   # - '!pnpm-lock.yaml'
+# Configuration:
+
+# - changed-files:
+#   - any-glob-to-any-file:
+#     # - '.github/**/*'
+#     # - '.husky/**/*'
+#     # - 'k8s/overlays/**/*'
+#     # - '.dockerignore'
+#     # - '.editorconfig'
+#     # - '.env.development'
+#     # - '.env.production'
+#     # - '.gitignore'
+#     # - '.npmrc'
+#     # - '.prettierignore'
+#     # - '.prettierrc'
+#     # - 'Dockerfile'
+#     # - 'buildConfig.json'
+#     # - '*.crt'
+#     # - '*.config.ts'
+#     # - 'tsconfig.*'
+#     # - '*.conf'
+#     # - '*.html'
+#     - '**/*.yaml' # below works so this should too
+#     - '**/*.yml' # works
+#   # - all-globs-to-all-files: 
+#   #   # - '!pnpm-lock.yaml'
 
 # Dependencies:
 # - changed-files:

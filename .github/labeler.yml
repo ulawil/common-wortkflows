@@ -1,11 +1,11 @@
 Source Code:
-- all: # all rules must be macthed for source label
+- any: # any rules must be macthed for source label
   - changed-files:
-    - any-glob-to-any-file:
-      - 'src/**/*' # any file must be in src or subdirs
-    - all-globs-to-all-files: 
-      - '!src/**/*.yaml' # all files must not have yaml extension
+    - all-globs-to-any-file: # theres any file that matches all globs
+      - 'src/**/*'
+      - '!src/**/*.yaml'
       - '!src/**/*.yml'
+      
 
       
       # - 'e2e/**/*'

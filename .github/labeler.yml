@@ -8,10 +8,10 @@ Source Code:
     # - 'public/**/*'
     # - '*.ts'
     # - '*.graphql'
-  - all-globs-to-all-files:
-    # - '!*.config.ts'
-    - '!src/**/*.yaml'
-    - '!src/**/*.yml'
+  # - all-globs-to-all-files:
+  #   # - '!*.config.ts'
+  #   - '!src/**/*.yaml'
+  #   - '!src/**/*.yml'
 
 Configuration:
 - changed-files:

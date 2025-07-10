@@ -3,14 +3,14 @@ source:
     - changed-files:
         - any-glob-to-any-file: 'src/**'
         - all-globs-to-all-files:
-            - '!src/main/resources/**/*.yml'
-            - '!src/main/resources/**/*.yaml'
+            - '!src/main/resources/*'
+            - '!src/main/resources/*'
 
 config:
 - changed-files:
     - any-glob-to-any-file:
-        - 'src/main/resources/**/*.yml'
-        - 'src/main/resources/**/*.yaml'
+        - 'src/main/resources/*'
+        - 'src/main/resources/*'
 
 
     

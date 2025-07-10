@@ -1,15 +1,15 @@
-# Source Code:
-# - changed-files:
-#   - any-glob-to-any-file: 
-#     # - 'src/**/*'
-#     # - 'e2e/**/*'
-#     # - 'public/**/*'
-#     # - '*.ts'
-#     # - '*.graphql'
-#   - all-globs-to-all-files:
-#     # - '!*.config.ts'
-#     # - '!src/**/*.yaml'
-#     # - '!**/*.yml'
+Source Code:
+- changed-files:
+  - any-glob-to-any-file: 
+    - 'src/**/*'
+    # - 'e2e/**/*'
+    # - 'public/**/*'
+    # - '*.ts'
+    # - '*.graphql'
+  - all-globs-to-all-files:
+    # - '!*.config.ts'
+    - '!src/**/*.yaml'
+    - '!src/**/*.yml'
 
 Configuration:
 - changed-files:
@@ -32,8 +32,8 @@ Configuration:
     # - 'tsconfig.*'
     # - '*.conf'
     # - '*.html'
-    - '**/*.yaml'
-    - '**/*.yml'
+    - '**/*.yaml' # below works so this should too
+    - '**/*.yml' # works
   # - all-globs-to-all-files: 
   #   # - '!pnpm-lock.yaml'
 

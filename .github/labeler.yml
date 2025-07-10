@@ -1,10 +1,11 @@
 Source Code:
-- any: # any rules must be macthed for source label
+- all:
   - changed-files:
-    - all-globs-to-any-file: # theres any file that matches all globs
-      - 'src/**/*'
-      - '!src/**/*.yaml'
-      - '!src/**/*.yml'
+    - any-glob-to-any-file: 'src/**/*'
+  - changed-files:
+    - all-globs-to-all-files:
+        - '!src/**/*.yaml'
+        - '!src/**/*.yml'
       
 
       

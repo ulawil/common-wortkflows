@@ -2,5 +2,5 @@ source:
 - any:
   - changed-files:
     - any-glob-to-any-file: 
-      - src/main/java/**
-      - src/test/java/**
+      - src/main/java/**/*
+      - src/test/java/**/*

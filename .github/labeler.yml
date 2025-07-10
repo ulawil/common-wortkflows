@@ -1,14 +1,14 @@
 Source Code:
 - changed-files:
   - any-glob-to-any-file: 
-    - 'src/**/*'
+    # - 'src/**/*'
     # - 'e2e/**/*'
     # - 'public/**/*'
     # - '*.ts'
     # - '*.graphql'
   - all-globs-to-all-files:
     # - '!*.config.ts'
-    - '!src/**/*.yaml'
+    # - '!src/**/*.yaml'
     # - '!**/*.yml'
 
 Configuration:

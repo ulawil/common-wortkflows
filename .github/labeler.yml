@@ -1,11 +1,8 @@
 Source Code:
 - all:
   - changed-files:
-    - any-glob-to-any-file: 
-      - 'src/**/*'
-    - all-globs-to-all-files:
-      - '!src/**/*.yaml'
-      - '!src/**/*.yml'
+    - any-glob-to-any-file: 'src/**/*'
+    - all-globs-to-all-files: '!src/**/*.yaml'
       
       # - 'e2e/**/*'
       # - 'public/**/*'

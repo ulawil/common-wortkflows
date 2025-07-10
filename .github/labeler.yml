@@ -2,6 +2,8 @@ Source Code:
 - changed-files:
   - any-glob-to-any-file: 
     - 'src/**/*'
+    - '!src/**/*.yml'
+    - '!src/**/*.yaml'
     # - 'e2e/**/*'
     # - 'public/**/*'
     # - '*.ts'

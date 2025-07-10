@@ -1,8 +1,9 @@
 source:
-- all:
+- any:
   - changed-files:
-    - any-glob-to-any-file: 'src/**/*'
-    - all-globs-to-all-files: '!src/main/resources/*'
+    - any-glob-to-any-file: 
+      - src/main/java/**
+      - src/test/java/**
 
 
     

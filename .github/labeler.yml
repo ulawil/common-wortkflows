@@ -1,7 +1,7 @@
 Source Code:
 - changed-files:
     any-glob-to-any-file:
-      - 'src/**'
+      - 'src/**/*'
       - '!src/**/*.yaml'
       - '!src/**/*.yml'
 

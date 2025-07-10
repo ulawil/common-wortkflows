@@ -1,15 +1,15 @@
-Source Code:
-- changed-files:
-  - any-glob-to-any-file: 
-    # - 'src/**/*'
-    # - 'e2e/**/*'
-    # - 'public/**/*'
-    # - '*.ts'
-    # - '*.graphql'
-  - all-globs-to-all-files:
-    # - '!*.config.ts'
-    # - '!src/**/*.yaml'
-    # - '!**/*.yml'
+# Source Code:
+# - changed-files:
+#   - any-glob-to-any-file: 
+#     # - 'src/**/*'
+#     # - 'e2e/**/*'
+#     # - 'public/**/*'
+#     # - '*.ts'
+#     # - '*.graphql'
+#   - all-globs-to-all-files:
+#     # - '!*.config.ts'
+#     # - '!src/**/*.yaml'
+#     # - '!**/*.yml'
 
 Configuration:
 - changed-files:
@@ -34,16 +34,16 @@ Configuration:
     # - '*.html'
     - '**/*.yaml'
     - '**/*.yml'
-  - all-globs-to-all-files: 
-    # - '!pnpm-lock.yaml'
+  # - all-globs-to-all-files: 
+  #   # - '!pnpm-lock.yaml'
 
-Dependencies:
-- changed-files:
-  - any-glob-to-any-file: 
-    # - 'package.json'
-    # - 'pnpm-lock.yaml'
+# Dependencies:
+# - changed-files:
+#   - any-glob-to-any-file: 
+#     # - 'package.json'
+#     # - 'pnpm-lock.yaml'
 
-Documentation:
-- changed-files:
-  - any-glob-to-any-file: 
-    # - '**/*.md'
+# Documentation:
+# - changed-files:
+#   - any-glob-to-any-file: 
+#     # - '**/*.md'

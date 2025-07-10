@@ -3,9 +3,11 @@ source:
     - all-globs-to-any-file: 
       - 'src/**/*'
       - '!src/main/resources/*'
+      - '!src/test/resources/*'
     
 config:
   - changed-files:
     - any-glob-to-any-file: 
       - 'src/main/resources/*'
+      - 'src/test/resources/*'
       

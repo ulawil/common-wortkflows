@@ -1,0 +1,49 @@
+Source Code:
+- changed-files:
+  - any-glob-to-any-file: 
+    - 'src/**/*'
+    - 'e2e/**/*'
+    - 'public/**/*'
+    - '*.ts'
+    - '*.graphql'
+  - all-globs-to-all-files:
+    - '!*.config.ts'
+    - '!**/*.yaml'
+    - '!**/*.yml'
+
+Configuration:
+- changed-files:
+  - any-glob-to-any-file:
+    - '.github/**/*'
+    - '.husky/**/*'
+    - 'k8s/overlays/**/*'
+    - '.dockerignore'
+    - '.editorconfig'
+    - '.env.development'
+    - '.env.production'
+    - '.gitignore'
+    - '.npmrc'
+    - '.prettierignore'
+    - '.prettierrc'
+    - 'Dockerfile'
+    - 'buildConfig.json'
+    - '*.crt'
+    - '*.config.ts'
+    - 'tsconfig.*'
+    - '*.conf'
+    - '*.html'
+    - '**/*.yaml'
+    - '**/*.yml'
+  - all-globs-to-all-files: 
+    - '!pnpm-lock.yaml'
+
+Dependencies:
+- changed-files:
+  - any-glob-to-any-file: 
+    - 'package.json'
+    - 'pnpm-lock.yaml'
+
+Documentation:
+- changed-files:
+  - any-glob-to-any-file: 
+    - '**/*.md'

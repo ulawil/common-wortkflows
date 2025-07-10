@@ -1,15 +1,16 @@
-Source:
+source:
 - all:
   - changed-files:
-    - any-glob-to-any-file: 'src/**/*'
-    - all-globs-to-all-files: '!src/main/resources/*.*'
-    - all-globs-to-all-files: '!src/test/resources/*.*'
+    - any-glob-to-any-file: 'src/**'
+    - all-globs-to-all-files:
+      - '!src/main/resources/*.yml'
+      - '!src/main/resources/*.yaml'
 
-Configuration:
-- changed-files:
-  - any-glob-to-any-file:
-    - 'src/main/resources/*.*'
-    - 'src/test/resources/*.*'
+config:
+- all:
+  - changed-files:
+    - any-glob-to-any-file: 'src/main/resources/*.yml'
+    - any-glob-to-any-file: 'src/main/resources/*.yaml'
 
 
     

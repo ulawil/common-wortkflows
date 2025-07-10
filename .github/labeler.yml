@@ -1,6 +1,15 @@
 source:
 - any:
   - changed-files:
-    - any-glob-to-any-file: 
-      - src/main/java/**/*
-      - src/test/java/**/*
+    - all-globs-to-any-file: 
+      - 'src/**'
+      - '!src/main/resouces/*'
+      - '!src/test/resouces/*'
+
+config:
+- any:
+  - changed-files:
+    - any-globs-to-any-file: 
+      - 'src/main/resouces/*'
+      - 'src/test/resouces/*'
+      

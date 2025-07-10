@@ -9,7 +9,7 @@ source:
 config:
 - any:
   - changed-files:
-    - any-globs-to-any-file: 
+    - any-glob-to-any-file: 
       - 'src/main/resouces/*'
       - 'src/test/resouces/*'
       

@@ -3,9 +3,9 @@ Source Code:
   - changed-files:
     - any-glob-to-any-file: 
       - 'src/**/*'
-        # - all-globs-to-all-files:
-        #     - '!src/**/*.yaml'
-        #     - '!src/**/*.yml'
+    - all-globs-to-all-files:
+      - '!src/**/*.yaml'
+      - '!src/**/*.yml'
       
       # - 'e2e/**/*'
       # - 'public/**/*'

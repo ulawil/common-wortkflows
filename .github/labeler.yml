@@ -1,13 +1,24 @@
 source:
   - changed-files:
     - all-globs-to-any-file: 
+      # common paths
       - 'src/**/*'
+      # frontend
+      - 'e2e/**/*'
+      - 'public/**/*'
+      - 'tests/**/*'
+      # backend
       - '!src/main/resources/*'
       - '!src/test/resources/*'
-    
+         
 config:
   - changed-files:
-    - any-glob-to-any-file: 
+    - any-glob-to-any-file:
+      # common paths
+      - '*.*'
+      # frontend
+      - 'k28/**/*'
+       # backend
       - 'src/main/resources/*'
       - 'src/test/resources/*'
       

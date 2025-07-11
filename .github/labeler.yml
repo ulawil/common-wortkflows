@@ -21,11 +21,12 @@ Config:
     - any-glob-to-any-file:
       # common
       - '*.json'
+      - '*.yaml'
+      - '*.yml'
+      - 'Dockerfile'
       # react
       - 'k28/**'
       - '*.conf'
-      - '*.yml'
-      - '*.yaml'
       - '*.ts'
       - '.dockerignore'
       - '.env.development'

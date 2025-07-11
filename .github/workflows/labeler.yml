@@ -25,8 +25,8 @@ jobs:
       - name: Copy labeler config and scripts
         run: |
           mkdir -p .github/scripts
-          cp config/.github/labeler.yml .github/labeler.yml
-          cp config/.github/scripts/review-labeler.js .github/scripts/review-labeler.js
+          cp commons/.github/labeler.yml .github/labeler.yml
+          cp commons/.github/scripts/review-labeler.js .github/scripts/review-labeler.js
 
       - name: Label PR based on files changed
         uses: actions/labeler@v5

@@ -34,11 +34,11 @@ jobs:
         with:
           repo-token: "${{ secrets.LABELER_TOKEN }}" # todo change to program builder repo token
 
-      - name: Label PR based on state and reviews
-        uses: actions/github-script@v7 # todo change to commit hash
-        with:
-          github-token: ${{ secrets.LABELER_TOKEN }} # todo change to program builder repo token
-          script: |
-            const script = require('./.github/scripts/review-labeler.js');
-            await script({ github, context })
+      # - name: Label PR based on state and reviews
+      #   uses: actions/github-script@v7 # todo change to commit hash
+      #   with:
+      #     github-token: ${{ secrets.LABELER_TOKEN }} # todo change to program builder repo token
+      #     script: |
+      #       const script = require('./.github/scripts/review-labeler.js');
+      #       await script({ github, context })
             

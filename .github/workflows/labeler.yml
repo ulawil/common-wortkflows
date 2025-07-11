@@ -27,6 +27,7 @@ jobs:
           mkdir -p .github/scripts
           cp commons/.github/labeler.yml .github/labeler.yml
           cp commons/.github/scripts/review-labeler.js .github/scripts/review-labeler.js
+          echo "{}" > package.json
 
       - name: Label PR based on files changed
         uses: actions/labeler@v5

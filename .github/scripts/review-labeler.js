@@ -70,7 +70,9 @@ async function updateLabel(github, owner, repo, issue_number, currentLabel, targ
           name: currentLabel,
         });
       } catch (error) {
-        if (error.status !== 404) {
+        if (error.status === 404) {
+          console.log(`Label "${currentLabel}" not found when trying to remove; skipping`);
+        } else {
           throw error;
         }
       }

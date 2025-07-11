@@ -1,24 +1,24 @@
 source:
   - changed-files:
-    - all-globs-to-any-file: 
+    - any-glob-to-any-file: 
       # common paths
       - 'src/**/*'
-      # frontend
+      # react
       - 'e2e/**/*'
       - 'public/**/*'
       - 'tests/**/*'
-      # backend
-      - '!src/main/resources/*'
-      - '!src/test/resources/*'
+      # spring
+      - 'src/main/resources/*'
+      - 'src/test/resources/*'
          
 config:
   - changed-files:
     - any-glob-to-any-file:
       # common paths
       - '*.*'
-      # frontend
+      # react
       - 'k28/**/*'
-       # backend
+       # spring
       - 'src/main/resources/*'
       - 'src/test/resources/*'
       

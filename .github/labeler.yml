@@ -30,7 +30,7 @@ Config:
       - '.dockerignore'
       - '.env.development'
       - '.env.production'
-       # spring
+      # spring
       - 'src/main/resources/*'
       - 'src/test/resources/*'
       

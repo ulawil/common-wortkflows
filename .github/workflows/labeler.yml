@@ -7,7 +7,7 @@ on:
         required: true
 
 jobs:
-  labeler:
+  file-based-label:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -25,7 +25,23 @@ jobs:
       - name: Copy labeler config
         run: cp config/.github/labeler.yml .github/labeler.yml
 
-      - name: Run labeler
+      - name: Label PR based on files changed
         uses: actions/labeler@v5
         with:
           repo-token: "${{ secrets.LABELER_TOKEN }}"
+
+  review-based-label:
+    needs: file-based-label
+    permissions:
+      contents: read
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Label PR based on status and reviews
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.LABELER_TOKEN }}
+          script: |
+            const script = require('./labeler.js')
+            await script({ github, context })
+            

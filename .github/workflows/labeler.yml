@@ -5,7 +5,7 @@ on:
 
 jobs:
   label-pr:
-    if: github.event.action == 'opened' || github.event.action == 'synchronize' || github.event.action == 'reopened'
+    if: github.event_name != 'pull_request_review'    
     runs-on: ubuntu-latest
     permissions:
       contents: read

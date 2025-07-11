@@ -8,8 +8,8 @@ source:
       - 'public/**/*'
       - 'tests/**/*'
       # spring
-      - 'src/main/resources/*'
-      - 'src/test/resources/*'
+      - '!src/main/resources/*'
+      - '!src/test/resources/*'
          
 config:
   - changed-files:

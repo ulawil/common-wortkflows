@@ -1,23 +1,35 @@
-source:
-  - changed-files:
-    - any-glob-to-any-file: 
-      # common paths
-      - 'src/**/*'
-      # react
-      - 'e2e/**/*'
-      - 'public/**/*'
-      - 'tests/**/*'
-      # spring
-      - '!src/main/resources/*'
-      - '!src/test/resources/*'
-         
-config:
+Source:
   - changed-files:
     - any-glob-to-any-file:
-      # common paths
-      - '*.*'
       # react
-      - 'k28/**/*'
+      - 'e2e/**'
+      - 'src/actions/**'
+      - 'src/components/**'
+      - 'src/context/**'
+      - 'src/hooks/**'
+      - 'src/routes/**'
+      - 'src/styles/**'
+      - 'src/types/**'
+      - 'src/utils/**'
+      - 'src/*'
+      # spring
+      - 'src/main/java/**'
+      - 'src/test/java/**'
+           
+Config:
+  - changed-files:
+    - any-glob-to-any-file:
+      # common
+      - '*.json'
+      # react
+      - 'k28/**'
+      - '*.conf'
+      - '*.yml'
+      - '*.yaml'
+      - '*.ts'
+      - '.dockerignore'
+      - '.env.development'
+      - '.env.production'
        # spring
       - 'src/main/resources/*'
       - 'src/test/resources/*'
